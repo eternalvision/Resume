@@ -18,7 +18,10 @@ a {
 
 h3 {
     color: var(--white-color);
-    margin: 30px 0 10px 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 a {
@@ -31,6 +34,12 @@ img {
 
 main {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+span,
+p {
+    font-size: var(--font-size-3) !important;
 }

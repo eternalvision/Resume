@@ -3,32 +3,31 @@
     -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
     padding: 20px;
+    margin-right: 10px;
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
-
     img {
         border-radius: var(--border-radius);
     }
     ul {
-        margin: 20px;
+        margin: 5px 20px 5px 20px;
         li {
             h3 {
-                font-size: 22px;
-                font-weight: 700;
+                font-size: var(--font-size-2);
+                font-weight: var(--font-weight-1);
                 color: var(--white-color);
             }
-
             ul {
                 li {
                     color: var(--orange-color);
                     span {
-                        color: var(--white-color);
+                        color: var(--gray-color);
                     }
                     a {
-                        font-size: 14px;
-                        font-weight: 400;
-                        color: var(--white-color);
+                        font-size: var(--font-size-3);
+                        font-weight: var(--font-weight-2);
+                        color: var(--gray-color);
                         text-decoration: none;
                     }
                 }

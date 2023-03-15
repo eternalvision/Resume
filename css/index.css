@@ -5,9 +5,17 @@
   --bg-additional-color: #16161d;
   --color: #16161d;
   --white-color: #dddce0;
-  --border-radius: 8px;
+  --white-color-card: #fff;
+  --gray-color: #9e9a9a;
+  --border-radius: 10px;
   --orange-color: #ff6b08;
   --box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.411);
+  --font-size-1: 45px;
+  --font-weight-1: 700;
+  --font-size-2: 20px;
+  --font-weight-2: 400;
+  --font-weight-3: 300;
+  --font-size-3: 17px;
 }
 
 * {
@@ -30,7 +38,10 @@ a {
 
 h3 {
   color: var(--white-color);
-  margin: 30px 0 10px 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 a {
@@ -45,12 +56,16 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+span,
+p {
+  font-size: var(--font-size-3) !important;
 }
 
 .Sitebar {
@@ -58,6 +73,7 @@ main {
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
   padding: 20px;
+  margin-right: 10px;
   border-radius: var(--border-radius);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,28 +87,42 @@ main {
   border-radius: var(--border-radius);
 }
 .Sitebar ul {
-  margin: 20px;
+  margin: 5px 20px 5px 20px;
 }
 .Sitebar ul li h3 {
-  font-size: 22px;
-  font-weight: 700;
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-1);
   color: var(--white-color);
 }
 .Sitebar ul li ul li {
   color: var(--orange-color);
 }
 .Sitebar ul li ul li span {
-  color: var(--white-color);
+  color: var(--gray-color);
 }
 .Sitebar ul li ul li a {
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--white-color);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-2);
+  color: var(--gray-color);
   text-decoration: none;
 }
 
 .AboutMeContainer {
-  margin: 20px;
+  padding: 30px;
+}
+.AboutMeContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .AboutMeContainer ul li {
   list-style: none;
@@ -103,13 +133,12 @@ main {
 }
 
 .AboutMeTitle ul:first-child li h2 {
-  font-size: 35px;
-  font-weight: 500;
+  font-size: var(--font-size-2);
   color: var(--color);
 }
 .AboutMeTitle ul:first-child li h1 {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-1);
   color: var(--color);
 }
 .AboutMeTitle ul:nth-child(2) li h3 {
@@ -119,7 +148,7 @@ main {
   color: var(--color);
 }
 .AboutMeTitle ul:last-child li:last-child ul li p {
-  font-size: 20px;
+  font-size: var(--font-size-2);
   font-weight: 400;
 }
 .AboutMeTitle ul:last-child li:last-child ul li p span {
@@ -130,23 +159,43 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .AboutMeProjects ul li {
   border-radius: var(--border-radius);
   padding: 20px;
-  font-weight: 700;
-  -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.281);
-  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.281);
-  background-color: #f5f7fa;
+  margin: 10px;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  background-color: var(--white-color-card);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .AboutMeProjects ul li a {
   width: 150px;
   height: 150px;
-  display: block;
-  overflow: hidden;
-  background-size: cover;
-  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: var(--border-radius);
 }
 .AboutMeProjects ul li a img {
   display: block;
@@ -156,7 +205,8 @@ main {
 .AboutMeProjects ul li a:last-child img {
   display: block;
   margin: 0 auto;
-  max-width: 150px;
+  width: 150px;
+  height: 150px;
   margin-top: 40px;
   padding: 17px;
 }
@@ -169,66 +219,48 @@ main {
           justify-content: center;
 }
 .AboutMeProjects ul li section span span {
-  color: #737373;
-  font-size: 14px;
-  font-weight: 700;
+  color: var --gray-color;
+  font-size: var(--font-size-3);
 }
 
 .card-text {
-  font-size: 24px;
+  font-size: var(--font-size-2);
   text-align: center;
-  font-weight: 300;
-  height: 50px;
+  font-weight: var(--font-weight-2);
+  padding-top: 10px;
+  height: 70px;
 }
 
 .text-under-card {
-  font-size: 13px;
+  font-size: var(--font-size-3);
   font-weight: normal;
   text-align: center;
-  margin-bottom: 10px;
 }
 
-.profession-date {
-  color: #ababab;
-  font-size: 12px;
-  font-weight: 400;
+.AboutMeEducation p a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
-
-.profession-divider {
-  color: #000000;
+.AboutMeEducation p a span:last-child {
+  color: var(--gray-color);
 }
-
-.profession-duties {
-  margin-top: 15px;
-  margin-bottom: 30px;
+.AboutMeEducation p a span:first-child {
+  color: var(--orange-color);
+  font-size: var(--font-size-3);
 }
-
-.profession-dutes-item {
-  color: #595959;
-  font-size: 14px;
-  font-weight: 400;
+.AboutMeEducation span {
+  color: var(--gray-color);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-2);
 }
-
-.universitet {
-  color: #ff6b08;
-  font-size: 16px;
-  font-weight: 700;
+.AboutMeEducation ul li {
+  padding-bottom: 15px;
 }
-
-.management {
-  margin-top: 11px;
-  margin-bottom: 11px;
-}
-
-.name-second {
-  display: none;
-}
-
-.about-me-none {
-  display: none;
-}
-
-.profession-state {
-  color: #b4a49c;
-  font-weight: 400;
+.AboutMeEducation ul li p a {
+  color: var(--gray-color);
 }
