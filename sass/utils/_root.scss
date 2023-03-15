@@ -1,13 +1,13 @@
 :root {
     --bg-color: #dddce0;
     --bg-additional-color: #16161d;
-    --color: #16161d;
-    --white-color: #dddce0;
+    --color: var(--bg-additional-color);
+    --white-color: var(--bg-color);
     --white-color-card: #fff;
     --gray-color: #9e9a9a;
     --border-radius: 10px;
     --orange-color: #ff6b08;
-    --box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.411);
+    --box-shadow: rgba(55, 55, 55, 0.02) 1px 1px 1px 1px;
 
     --font-size-1: 45px;
     --font-weight-1: 700;

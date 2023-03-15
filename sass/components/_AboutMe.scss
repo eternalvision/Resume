@@ -66,10 +66,11 @@
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
+        margin-left: -10px;
         li {
+            margin: 10px;
             border-radius: var(--border-radius);
             padding: 20px;
-            margin: 10px;
             -webkit-box-shadow: var(--box-shadow);
             box-shadow: var(--box-shadow);
             background-color: var(--white-color-card);
