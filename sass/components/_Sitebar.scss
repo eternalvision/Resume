@@ -1,0 +1,38 @@
+.Sitebar {
+    background: var(--bg-additional-color);
+    -webkit-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+
+    img {
+        border-radius: var(--border-radius);
+    }
+    ul {
+        margin: 20px;
+        li {
+            h3 {
+                font-size: 22px;
+                font-weight: 700;
+                color: var(--white-color);
+            }
+
+            ul {
+                li {
+                    color: var(--orange-color);
+                    span {
+                        color: var(--white-color);
+                    }
+                    a {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: var(--white-color);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

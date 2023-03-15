@@ -1,0 +1,170 @@
+.AboutMeContainer {
+    margin: 20px;
+    ul {
+        li {
+            list-style: none;
+            color: var(--color);
+            h3 {
+                color: var(--color);
+            }
+        }
+    }
+}
+
+.AboutMeTitle {
+    ul {
+        &:first-child {
+            li {
+                h2 {
+                    font-size: 35px;
+                    font-weight: 500;
+                    color: var(--color);
+                }
+                h1 {
+                    font-size: 45px;
+                    font-weight: 700;
+                    color: var(--color);
+                }
+            }
+        }
+        &:nth-child(2) {
+            li {
+                h3 {
+                    color: var(--color);
+                }
+            }
+        }
+        &:last-child {
+            li {
+                &:first-child {
+                    h3 {
+                        color: var(--color);
+                    }
+                }
+                &:last-child {
+                    ul {
+                        li {
+                            p {
+                                font-size: 20px;
+                                font-weight: 400;
+                                span {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.AboutMeProjects {
+    ul {
+        display: flex;
+        li {
+            border-radius: var(--border-radius);
+            padding: 20px;
+            font-weight: 700;
+            -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.281);
+            box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.281);
+            background-color: #f5f7fa;
+            position: relative;
+
+            a {
+                width: 150px;
+                height: 150px;
+                display: block;
+                overflow: hidden;
+                background-size: cover;
+                border-radius: 8px;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 150px;
+                }
+                &:last-child {
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        max-width: 150px;
+                        margin-top: 40px;
+                        padding: 17px;
+                    }
+                }
+            }
+            section {
+                display: flex;
+                justify-content: center;
+                span {
+                    span {
+                        color: #737373;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-text {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    height: 50px;
+}
+
+.text-under-card {
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.AboutMeEducation {
+}
+.profession-date {
+    color: #ababab;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.profession-divider {
+    color: #000000;
+}
+
+.profession-duties {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.profession-dutes-item {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.universitet {
+    color: #ff6b08;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.management {
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.name-second {
+    display: none;
+}
+
+.about-me-none {
+    display: none;
+}
+
+.profession-state {
+    color: #b4a49c;
+    font-weight: 400;
+}
