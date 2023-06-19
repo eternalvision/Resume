@@ -3,12 +3,15 @@
     -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
     padding: 20px;
-    margin-right: 10px;
     border-radius: var(--border-radius);
     display: flex;
+    max-width: 410px;
     flex-direction: column;
     img {
         border-radius: var(--border-radius);
+        object-fit: cover;
+        max-width: 370px;
+        max-height: 370px;
     }
     ul {
         margin: 5px 20px 5px 20px;
@@ -34,5 +37,16 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Sitebar {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 425px) {
+    .Sitebar {
+        margin: 0;
     }
 }

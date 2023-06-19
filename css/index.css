@@ -72,16 +72,38 @@ li {
   list-style: none;
 }
 
+@media screen and (max-width: 771px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .AboutMeTitle ul:first-child li h1 {
+    line-height: 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    padding: 10px;
+  }
+  .AboutMeContainer {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .Sitebar {
   background: var(--bg-additional-color);
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
   padding: 20px;
-  margin-right: 10px;
   border-radius: var(--border-radius);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 410px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -89,6 +111,10 @@ li {
 }
 .Sitebar img {
   border-radius: var(--border-radius);
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 370px;
+  max-height: 370px;
 }
 .Sitebar ul {
   margin: 5px 20px 5px 20px;
@@ -112,6 +138,16 @@ li {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .Sitebar {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .Sitebar {
+    margin: 0;
+  }
+}
 .AboutMeContainer {
   padding: 30px;
 }
@@ -269,4 +305,10 @@ li {
 }
 .AboutMeEducation ul li p a {
   color: var(--gray-color);
+}
+
+@media screen and (max-width: 967px) {
+  .AboutMeTitle ul:first-child li h1 {
+    line-height: 50px;
+  }
 }

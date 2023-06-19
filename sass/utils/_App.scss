@@ -47,3 +47,30 @@ p {
 li {
     list-style: none;
 }
+
+@media screen and (max-width: 771px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    .AboutMeTitle {
+        ul {
+            &:first-child {
+                li {
+                    h1 {
+                        line-height: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        padding: 10px;
+    }
+    .AboutMeContainer {
+        padding: 20px;
+        display: flex;
+    }
+}

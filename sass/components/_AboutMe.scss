@@ -161,3 +161,17 @@
         }
     }
 }
+
+@media screen and (max-width: 967px) {
+    .AboutMeTitle {
+        ul {
+            &:first-child {
+                li {
+                    h1 {
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
