@@ -68,6 +68,10 @@ p {
   font-size: var(--font-size-3) !important;
 }
 
+li {
+  list-style: none;
+}
+
 .Sitebar {
   background: var(--bg-additional-color);
   -webkit-box-shadow: var(--box-shadow);
@@ -95,6 +99,7 @@ p {
   color: var(--white-color);
 }
 .Sitebar ul li ul li {
+  list-style: circle;
   color: var(--orange-color);
 }
 .Sitebar ul li ul li span {
